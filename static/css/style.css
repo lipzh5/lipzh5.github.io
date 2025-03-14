@@ -1,0 +1,466 @@
+/*************************************************
+ *  Overall
+ **************************************************/
+
+
+ .section-heading {
+    font-size: 1.17em;
+    font-weight: 700;
+    padding-bottom: 0.3rem;
+  }
+  
+  
+  /*************************************************
+   *  About
+   **************************************************/
+  
+  
+  .name {
+    font-size: 2em;
+    font-weight: 700;
+    padding-bottom: 0.9rem;
+  }
+  
+  .link {
+    padding-top: 0.9rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 35px;
+    padding-bottom: 25px;
+    padding-top: 28px;
+  }
+  
+  .photo {
+    padding-left: 15px;
+    padding-right: 35px;
+    padding-bottom: 25px;
+    padding-top: 28px;
+  }
+  
+  .topics {
+    padding-left: 15px;
+    padding-right: 35px;
+    padding-bottom: 25px;
+    padding-top: 88px;
+  }
+  
+  .description {
+    padding-top: 15px;
+  }
+  
+  @media screen and (max-width: 910px) {
+    .topics {
+      padding-top: 0px;
+      padding-bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 619px) {
+    .info {
+      padding-top: 0px;
+      padding-bottom: 10px;
+    }
+  
+    .link {
+      padding-bottom: 0px;
+      padding-top: 10px;
+    }
+  
+    .name {
+      padding-bottom: 10px;
+    }
+  }
+  
+  .profile {
+    text-align: left;
+  }
+  
+  .portrait {
+    width: 200px;
+    height: auto;
+  }
+  
+  .title {
+    font-weight: 700;
+  }
+  
+  
+  /*************************************************
+   *  Publication
+   **************************************************/
+  tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .year-header {
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .publication-topic-header {
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .publication-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .publication {
+    flex: 1 1 100%;
+    /* Full width for small screens */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .filters a {
+    text-decoration: none;
+  }
+  
+  .filters a.active {
+    text-decoration: underline;
+    color: black;
+  }
+  
+  .container {
+    max-width: 960px;
+    /* This is typically the max width for 'lg' breakpoint */
+  }
+  
+  .publication-text {
+    margin-top: -7px;
+  }
+  
+  .video-teaser {
+    max-width: 240px;
+    /* This makes sure it doesn't overflow its container */
+    padding: 0 !important;
+  }
+
+  .mobile-video-teaser {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .mobile-video-teaser.show {
+    max-height: 300px; /* Adjust this value based on your maximum expected height */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: max-height 0.2s ease-in, margin 0.2s ease-in;
+}
+
+  .teaser-clicker{
+    display: none;
+  }
+  
+  .video-teaser video,
+  .video-teaser img {
+    width: 100%;
+    height: auto;
+    /* This maintains the aspect ratio */
+  }
+  
+  .pub-teaser-fig {
+    max-width: 340px;
+  }
+  
+  .pub-teaser-video {
+    max-width: 340px;
+  }
+  
+  .pub-title {
+    font-weight: 700;
+    color: rgb(46, 45, 41);
+  }
+  
+  .pub-venue {
+    font-weight: 700;
+  }
+  
+  .pub-highlight {
+    /*color: #EB5050;*/
+    /* color: #8A00B3; */
+    color: #BB2222;
+    font-weight: 700;
+  }
+  
+  .pub-authors {
+    max-width: 100%;
+    color: rgb(120, 120, 120);
+  }
+  
+  .pub-authors .ky {
+    color: rgb(46, 45, 41);
+    font-weight: 700;
+  }
+  
+  .pub-authors a:hover {
+    max-width: 100%;
+    color: rgb(120, 120, 120);
+    text-decoration: underline;
+  }
+  
+  .pub-authors a:visited {
+    max-width: 100%;
+    color: rgb(120, 120, 120);
+  }
+  
+  .pub-authors a:link {
+    max-width: 100%;
+    color: rgb(120, 120, 120);
+  }
+  
+  .pub-resources {
+    max-width: 100%;
+  }
+  
+  html {
+    font-family: 'Mulish',
+    sans-serif;
+    font-size: 14.4px;
+    line-height: 1.65;
+    scroll-behavior: smooth;
+  }
+  
+  @media screen and (max-width: 639px) {
+    html {
+      font-size: 11.5px;
+    }
+
+    .teaser-clicker{
+      display: inline;
+    }
+  
+    .video-teaser {
+      display: none;
+    }
+  
+    .publication-text {
+      padding: 0;
+    }
+  }
+
+  @media screen and (min-width: 640px) {
+    .mobile-video-teaser {
+      max-height: 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
+  }
+  
+  body {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    line-height: inherit;
+    color: inherit;
+  
+    background-color: white;
+  
+    margin-top: 50px;
+    /* Offset body content by navbar height. */
+    padding-top: 0;
+    counter-reset: captions;
+  }
+  
+  .max-width-640 {
+    max-width: 640px;
+  }
+  
+  .margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .center-text {
+    text-align: center;
+  }
+  
+  /* Body text */
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  /* Lists */
+  ul,
+  ol,
+  dl {
+    margin: 0;
+    padding: 5px 10px 6px 30px;
+  }
+  
+  .responsive-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .responsive-list li {
+    width: 100%;
+    /* Full width on small screens */
+  }
+  
+  @media (min-width: 768px) {
+  
+    /* Adjust for your large screen breakpoint */
+    .responsive-list li {
+      width: 50%;
+      /* Two columns on large screens */
+    }
+  }
+  
+  /* Navigation bar text */
+  .navbar-light {
+    font-family: 'Mulish',
+    sans-serif;
+    font-weight: 500;
+    line-height: 1.25;
+    text-rendering: optimizeLegibility;
+  }
+  
+  a,
+  a:hover {
+    color: #0055AA;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  img,
+  video {
+    height: auto;
+    display: block;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+  
+  .img-responsive {
+    /* Extend Bootstrap declaration with centering. */
+    margin: 0 auto;
+  }
+  
+  .responsive-wrap iframe {
+    max-width: 100%;
+  }
+  
+  /*************************************************
+   *  Home Sections
+   **************************************************/
+  
+  .home-section {
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  
+  .home-section :first-of-type {
+    margin-top: 0;
+  }
+  
+  
+  /*************************************************
+   *  Navigation Bar
+   **************************************************/
+  
+  .navbar {
+    min-height: 50px !important;
+    height: 50px;
+  }
+  
+  .navbar-light {
+    background: #003366 !important;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, .11)
+  }
+  
+  .navbar-light .navbar-nav>.nav-item>.nav-link,
+  .navbar-light .navbar-nav>.nav-item>.nav-link:focus,
+  .navbar-light .navbar-nav>.nav-item>.nav-link:hover {
+    white-space: nowrap;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  
+    color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .navbar-light .navbar-nav>.nav-item>.nav-link:focus {
+    color: white;
+    background-color: transparent;
+  }
+  
+  .navbar-light .navbar-nav>.nav-item>.nav-link:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  .navbar-light .navbar-nav>li.nav-item>a.active,
+  .navbar-light .navbar-nav>li.nav-item>a.active:focus,
+  .navbar-light .navbar-nav>li.nav-item>a.active:hover {
+    color: white;
+    font-weight: 800;
+    background-color: transparent !important;
+    /* Override Bootstrap. */
+  }
+  
+  .navbar-brand,
+  .navbar-nav li.nav-item a.nav-link {
+    height: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .navbar-light .navbar-nav>.open>a,
+  .navbar-light .navbar-nav>.open>a:focus,
+  .navbar-light .navbar-nav>.open>a:hover,
+  .navbar-light .navbar-nav>.open>a:visited {
+    color: white !important;
+  
+    background-color: #003366  !important;
+  }
+  
+  .navbar-light .navbar-brand {
+    font-weight: 700;
+  
+    color: white;
+  }
+  
+  .navbar-light .navbar-brand:focus,
+  .navbar-light .navbar-brand:hover {
+    color: white;
+    background-color: transparent;
+  }
+  
+  .navbar-contents {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: auto;
+  }
+  
+  .navbar-contents .navbar-nav {
+    flex-direction: row;
+  }
+  
+  
+  /*************************************************
+   *  Project websites
+   **************************************************/

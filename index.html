@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <title>Peizhen &#34;Li</title>
+        <meta name="description" content="Peizhen Li is a Ph.D. student at the School of Computing of Macquarie University.">
+        <link rel="icon" type="image/x-ico" href="/static/images/ameca_favicon.ico">
+        <link rel="shortcut icon" type="image/x-ico" href="/static/image/ameca_favicon.ico">
+        <link rel="apple-touch-icon" type="image/x-ico" href="/static/images/ameca_favicon.ico">
+        <meta property="og:site_name" content="Peizhen &#34; Li">
+        <meta property="og:url" content="https://kovenyu.com/">
+        <meta property="og:title" content="Peizhen &#34; Li">
+        <meta property="og:description" content="Peizhen Li is a Ph.D. student at the School of Computing of Macquarie University.">
+        <meta property="og:image" content="/static/image/ameca_favicon.ico">
+        <meta property="og:locale" content="en-us">
+        <meta property="og:updated_time" content="2016-04-20T00:00:00&#43;00:00">
+        <meta name="generator" content="Hugo 0.50"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <script type="text/javascript">
+            var sc_project = 12929132;
+            var sc_invisible = 1;
+            var sc_security = "e95a6811";
+        </script>
+        <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+        <noscript>
+            <div class="statcounter">
+                <a title="Web Analytics" href="https://statcounter.com/" target="_blank">
+                    <img class="statcounter" src="https://c.statcounter.com/12929132/0/e95a6811/1/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade">
+                </a>
+            </div>
+        </noscript>
+    </head>
+    <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+        <nav class="navbar navbar-light fixed-top py-0 px-0" id="navbar-main">
+            <div class="container" id="navbar-container">
+                <!-- <a class="navbar-brand" href="/">Peizhen Li</a> -->
+                <div class="navbar-contents" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#about" data-target="#about">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/#publications" data-target="#publications">
+                                <span>Publications</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <span id="homepage" style="display: none"></span>
+        <section id="about" class="home-section">
+            <div class="container">
+                <style>
+                    #profilePic {
+                        transition: opacity 1s ease-in-out;
+                    }
+                </style>
+                <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="">
+                    <div class="photo profile">
+                        <img id="profilePic" class="portrait" src="static/images/PeizhenLi.jpg" itemprop="image" alt="Avatar">
+                    </div>
+                    <div class="info profile">
+                        <div class="name" itemprop="name">Peizhen Li</div>
+                        <div class="normal-text">Ph.D. Candidate</div>
+                        <div class="normal-text">School of Computing</div>
+                        <div class="normal-text">Macquarie University</div>
+                        <div class="normal-text">
+                            Email: <a href="">peizhen.li1@hdr.mq.edu.au</a>
+                        </div>
+                        <div class="link">
+                            <a href="https://scholar.google.com.au/citations?user=8E5dY3sAAAAJ&hl=en">Google Scholar</a>
+                            / <a href="https://github.com/lipzh5">Github</a>
+                            / <a href="https://lipzh5.github.io/Peizhen_Li.pdf">CV</a>
+                        </div>
+                    </div>
+                    <div class="topics profile">
+                        <div class="title">Current Research Topics</div>
+                        <div class="container-md">
+                            <ul>
+                                <li>
+                                    <a href="#imit" onclick="smoothScrollToCenter(event, 'phys');">Realistic Humanoid Facial Expression Imitation</a>
+                                </li>
+                                <li>
+                                    <a href="#gen" onclick="smoothScrollToCenter(event, 'dyn');">Nuanced Humanoid Facial Expression Generation</a>
+                                </li>
+                                <li>
+                                    <a href="#sys" onclick="smoothScrollToCenter(event, 'gen');">Affective Human-Robot Interaction System</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="description col-12" itemprop="description">
+                        <p>
+                            I am a PhD candidate at the School of Computing of Macquarie University, advised by <a href="www.datasciences.org/">Longbing Cao</a>. My research focuses on humanoid facial expression imitation and generation, as well as how humanoid robots can communicate affectively with humans. Before joining Stanford, I earned both my master's and bachelor's degrees from Sun Yat-sen University.
+                        </p>
+                    </div>
+                </div>
+                <script>
+                    var N = 4;
+                    var images = [];
+                    for (var i = 1; i <= N; i++) {
+                        images.push('static/images/random_' + i + '.jpg');
+                    }
+
+                    var default_image = 'static/images/PeizhenLi.jpg';
+                    var lastImage = default_image;
+                    var timer;
+                    var profilePic = document.getElementById('profilePic');
+
+                    function getRandomImage() {
+                        var filteredImages = images.filter(function(image) {
+                            return image !== lastImage;
+                        });
+
+                        var randomIndex = Math.floor(Math.random() * filteredImages.length);
+                        return filteredImages[randomIndex];
+                    }
+
+                    function changeImage(newSrc) {
+                        profilePic.style.opacity = 0;
+                        setTimeout(function() {
+                            profilePic.src = newSrc;
+                            lastImage = newSrc;
+                            profilePic.style.opacity = 1;
+                        }, 300);
+                    }
+
+                    function timedChange() {
+                        var newImage = getRandomImage();
+                        changeImage(newImage);
+                        setTimeout(function() {
+                            profilePic.style.opacity = 0;
+                            setTimeout(function() {
+                                profilePic.src = default_image;
+                                profilePic.style.opacity = 1;
+                            }, 300);
+                        }, 600);
+                    }
+
+                    function resetTimer() {
+                    }
+
+                    profilePic.addEventListener('mouseover', function() {
+                        changeImage(getRandomImage());
+                        resetTimer();
+                    });
+
+                    profilePic.addEventListener('mouseout', function() {
+                        changeImage(default_image);
+                        resetTimer();
+                    });
+
+                    resetTimer();
+
+                    document.getElementById('prospective-students-toggle').addEventListener('click', function(e) {
+                        e.preventDefault();
+                        var content = document.getElementById('prospective-students-content');
+                        if (content.style.display === 'none') {
+                            content.style.display = 'block';
+                        } else {
+                            content.style.display = 'none';
+                        }
+                    });
+                </script>
+            </div>
+        </section>
+        <section id="awards" class="home-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 section-heading">Honors & Awards 🏆
+                    </div>
+                    <div class="col-12">
+                        <ul>
+                            <li><strong>Google PhD Fellowship, 2024 </strong> </li>
+                            <li>International Macquarie Research Excellence Scholarship, 2023-2026 </li>
+                            <li>Outstanding Master Graduate, Sun Yat-sen University, 2020 </li>
+                            <li>National Scholarship for Postgraduates, Sun Yat-sen University, 2018, 2019 </li>
+                            <li>National Encouragement Scholarship, Sun Yat-sen University, 2015, 2016 </li>
+                            <li>Sun Hung Kai Properties Kwok Foundation Sun Yat-sen University Encouragement Scholarship, 2014 </li>
+                            <li>First Prize of Excellent Student Scholarship, Sun Yatsen University, 2014, 2015, 2016 </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="publications" class="home-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 section-heading filters">
+                    Selected Publications 📖
+                    </div>
+                    <div class="col-12 publication-list" id="publication-placeholder">
+                        <table width="100%" align="center" border="0" cellspacing="0" cellpading="15">
+                            <tr>
+                                <td width="30%" valign="top" align="center"><a href="https://arxiv.org/pdf/2110.00121.pdf"><img src="static/images/UGotMe_distraction.png" alt="sym" width="100%" style="padding-top:5px;padding-bottom:0px; padding-right: 10px;border-radius:15px;"></a></td>
+                                <td width="60%" valign="top">
+                                  <p>
+                                  <heading>
+                                    <b>UGotMe: An Embodied System
+                                        for Affective Human-Robot Interaction</b></heading><br>
+                                  <strong>Peizhen Li</strong>, Longbing Cao, Xiao-Ming Wu, Xiaohan Yu, Runze Yang<br>
+                                  <a href="https://2025.ieee-icra.org/">ICRA 2025 </a></b>
+                                  </p>
+                                  <br>
+                                  <div class="paper" id="collab_marl"></div>
+                                  <a href="https://arxiv.org/pdf/2410.18373">Paper</a> /
+                                  <a href="https://pi3-141592653.github.io/UGotMe/">Website</a>
+                                  
+                                  </div>
+                                </td>
+                            </tr>
+                             <br>
+                            <tr>
+                                <td width="30%" valign="top" align="center"><a href="https://arxiv.org/pdf/2110.00121.pdf"><img src="static/images/edmot.png" alt="sym" width="100%" style="padding-top:5px;padding-bottom:0px; padding-right: 10px;border-radius:15px;"></a></td>
+                                <td width="60%" valign="top">
+                                  <p>
+                                  <heading>
+                                    <b>EdMot: An Edge Enhancement Approach for Motif-aware Community Detection</b></heading><br>
+                                  <strong>Peizhen Li</strong>, Ling Huang, Chang-Dong Wang, Jian-Huang Lai<br>
+                                  <a href="https://www.kdd.org/kdd2019/">KDD 2019 </a></b>
+                                  </p>
+                                  <b style="color:rgb(179, 13, 13);">Oral Presentation</b>
+                                  <br>
+                            
+                                  <div class="paper" id="collab_marl">
+                                    <!-- <a href="https://pi3-141592653.github.io/UGotMe/">Website</a>/ -->
+                                  <a href="https://dl.acm.org/doi/10.1145/3292500.3330882">Paper</a> /
+                                  <a href="https://github.com/lipzh5/EdMot_pro">Code</a>
+                                  
+                                  </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="30%" valign="top" align="center"><a href="https://arxiv.org/pdf/2110.00121.pdf"><img src="static/images/cdlp.png" alt="sym" width="100%" style="padding-top:5px;padding-bottom:0px; padding-right: 10px;border-radius:15px;"></a></td>
+                                <td width="60%" valign="top">
+                                  <p>
+                                  <heading>
+                                    <b>Community Detection by Motif-Aware Label Propagation</b></heading><br>
+                                  <strong>Peizhen Li</strong>, Ling Huang, Chang-Dong Wang, Jian-Huang Lai, Dong Huang<br>
+                                  <a href="https://dl.acm.org/toc/tkdd/2020/14/2">TKDD 2020</a></b>
+                                  </p>
+                                  <br>
+                            
+                                  <div class="paper" id="collab_marl">
+                                    <!-- <a href="https://pi3-141592653.github.io/UGotMe/">Website</a>/ -->
+                                  <a href="https://dl.acm.org/doi/10.1145/3378537">Paper</a> /
+                                  <a href="https://github.com/lipzh5/MWLP">Code</a>
+                                  
+                                  </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="30%" valign="top" align="center"><a href="https://arxiv.org/pdf/2110.00121.pdf"><img src="static/images/brainnet.png" alt="sym" width="100%" style="padding-top:5px;padding-bottom:0px; padding-right: 10px;border-radius:15px;"></a></td>
+                                <td width="60%" valign="top">
+                                <p>
+                                  <heading>
+                                    <b>Brain network analysis for auditory disease: A twofold study</b></heading><br>
+                                  <strong>Peizhen Li</strong>, Ling Huang, Chang-Dong Wang, Chuan Li, Jian-Huang Lai<br>
+                                  <a href="https://www.sciencedirect.com/science/article/pii/S0925231219305296?via%3Dihub">Neurocomputing 2019</a></b>
+                                  </p>
+                                  <br>
+                            
+                                  <div class="paper" id="collab_marl">
+                                    <!-- <a href="https://pi3-141592653.github.io/UGotMe/">Website</a>/ -->
+                                  <a href="https://www.sciencedirect.com/science/article/pii/S0925231219305296">Paper</a> 
+                                  <!-- <a href="https://github.com/lipzh5/MWLP">Code</a> -->
+                                  
+                                  </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="30%" valign="top" align="center"><a href="https://arxiv.org/pdf/2110.00121.pdf"><img src="static/images/cdam.png" alt="sym" width="100%" style="padding-top:5px;padding-bottom:0px; padding-right: 10px;border-radius:15px;"></a></td>
+                                <td width="60%" valign="top">
+                                <p>
+                                  <heading>
+                                    <b>Community Detection Using Attribute Homogenous Motif</b></heading><br>
+                                  <strong>Peizhen Li</strong>, Ling Huang, Chang-Dong Wang, Dong Huang, Jian-Huang Lai<br>
+                                  <a href="https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=8274985&punumber=6287639">IEEE Access 2018</a></b>
+                                  </p>
+                                  <br>
+                            
+                                  <div class="paper" id="collab_marl">
+                                    <!-- <a href="https://pi3-141592653.github.io/UGotMe/">Website</a>/ -->
+                                  <a href="https://ieeexplore.ieee.org/document/8449274">Paper</a> 
+                                  <!-- <a href="https://github.com/lipzh5/MWLP">Code</a> -->
+                                  
+                                  </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="30%" valign="top" align="center"><a href="https://arxiv.org/pdf/2110.00121.pdf"><img src="static/images/auditory.png" alt="sym" width="100%" style="padding-top:5px;padding-bottom:0px; padding-right: 10px;border-radius:15px;"></a></td>
+                                <td width="60%" valign="top">
+                                <p>
+                                  <heading>
+                                    <b>Higher-Order Brain Network Analysis for Auditory Disease</b></heading><br>
+                                  <strong>Peizhen Li</strong>, Yue-Xin Cai, Chang-Dong Wang, Mao-Jin Liang, Yi-Qing Zheng<br>
+                                  <a href="https://dl.acm.org/toc/nple/2019/49/3">Neural Processing Letters 2018</a></b>
+                                  </p>
+                                  <br>
+                            
+                                  <div class="paper" id="collab_marl">
+                                  <a href="https://dl.acm.org/doi/10.1007/s11063-018-9815-7">Paper</a> 
+                                  <!-- <a href="https://github.com/lipzh5/MWLP">Code</a> -->
+                                  
+                                  </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="30%" valign="top" align="center"><a href="https://arxiv.org/pdf/2110.00121.pdf"><img src="static/images/pr.png" alt="sym" width="100%" style="padding-top:5px;padding-bottom:0px; padding-right: 10px;border-radius:15px;"></a></td>
+                                <td width="60%" valign="top">
+                                <p>
+                                  <heading>
+                                    <b>Discriminative metric learning for multi-view graph partitioning</b></heading><br>
+                                    Juan-Hui Li, Chang-Dong Wang, <strong>Peizhen Li</strong>, Jian-Huang Lai<br>
+                                  <a href="https://www.sciencedirect.com/journal/pattern-recognition/vol/75/suppl/C"> Pattern Recognition 2018</a></b>
+                                  </p>
+                                  <br>
+                            
+                                  <div class="paper" id="collab_marl">
+                                  <a href="https://www.sciencedirect.com/science/article/pii/S0031320317302352?via%3Dihub">Paper</a> 
+                                  <!-- <a href="https://github.com/lipzh5/MWLP">Code</a> -->
+                                  
+                                  </div>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section id="teaching" class="home-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 section-heading filters">
+                        Teaching 🧑‍🎓
+                    </div>
+                    <div class="col-12">
+                        <ul>
+                            <li>
+                                Guest Lecture on <strong>DeepDream and Neural Style Transfer</strong> (<a href="https://lipzh5.github.io/presentation240318/DeepDreamNeuralStyleTransfer.pdf">slides</a>), School of Computing, Macquarie University, 2024
+                            </li>
+                            <li>
+                                Teaching Assistant for <strong>Advanced Mathematics</strong>, School of Computer Science and Engineering, Sun Yat-sen University, 2019
+                            </li>
+                            <li>
+                                Teaching Assistant for <strong>Data Mining</strong>, School of Computer Science and Engineering, Sun Yat-sen University, 2018
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+           
+    
+        </section>
+
+        <section id="experience" class="home-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 section-heading filters">
+                    Experience 🏛️ 💼
+                    </div>
+                    <div class="col-12">
+                        <ul>
+                            <li>
+                                Game Development Engineer (Diablo Immortal, ZOZ), Netease Games, 2020-2023
+                            </li>
+                            <li>
+                                Algorithm Engineer intern, WeBank, 2019
+                            </li>
+                            <li>
+                                Machine Learning Project intern, Netease Games, 2019
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+           
+        </section>
+
+        
