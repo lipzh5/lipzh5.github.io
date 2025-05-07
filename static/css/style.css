@@ -287,6 +287,11 @@
   .center-text {
     text-align: center;
   }
+
+  .indented-text {
+    margin-left: 0px;
+    text-indent: 0.8em;
+  }
   
   /* Body text */
   p {
